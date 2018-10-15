@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-color">
+  <a class="navbar-brand" href="#">Referral Marketing</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn login-btn" type="button" (click)="open(loginmodal)" routerLink="/account">
+        Log in
+      </button>
+    </form>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn signin-btn" type="submit" (click)="open(registermodal)">
+        Sign Up
+      </button>
+    </form>
+  </div>
+</nav>
+<!--modal for login form-->
+<ng-template #loginmodal let-modal>
+  <div class="modal-header">
+    <button type="button" class="close btn" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+    <div class="card" style="width: 100%;">
+      <div class="card-body">
+        <h5 class="card-title">Login</h5>
+        <h6 class="card-subtitle mb-2 text-muted">If you have an account</h6>
+        <div id="login-form">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn login-btn float-right">Login</button>
+            <div class="loginwithfb">
+              <p class="splitertxt"><span class="spliter"></span>or<span class="spliter"></span></p>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Login With Facebook</button>
+            </div>
+          </form>
+        </div>
+        <a href="#" class="card-link">Terms & conditions</a>
+        <a href="#" class="card-link">Create Account</a>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<!--modal for registration form-->
+<ng-template #registermodal let-modal>
+  <div class="modal-header">
+    <button type="button" class="close btn" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+    <div class="card" style="width: 100%;">
+      <div class="card-body">
+        <h5 class="card-title">Sign In</h5>
+        <h6 class="card-subtitle mb-2 text-muted">create an account using your email</h6>
+        <div id="register-form">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="registerInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="registerInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="registerInputPassword2" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn login-btn float-right">Sign In</button>
+            <div class="loginwithfb">
+              <p class="splitertxt"><span class="spliter"></span>or<span class="spliter"></span></p>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Login With Facebook</button>
+            </div>
+          </form>
+        </div>
+        <a href="#" class="card-link">Terms & conditions</a>
+        <a href="#" class="card-link">Log in</a>
+      </div>
+    </div>
+  </div>
+</ng-template>

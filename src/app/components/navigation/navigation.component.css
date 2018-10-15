@@ -1,0 +1,63 @@
+.bg-color{
+  background-color: #FFFFFF;
+}
+.navbar-light{
+  background-color: #FFFFFF;
+}
+.navbar-brand{
+  color: #201010;
+  font-family: 'Crimson Text', serif;
+  font-size: 32px;
+}
+.navbar{
+  border-bottom: 1px solid #201010;
+  margin-bottom: 5%;
+}
+.login-btn{
+  background-color: #201010;
+  border-radius: 0;
+  color: #FFFFFF;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+}
+.signin-btn{
+  background-color: #201010;
+  border-radius: 0;
+  color: #FFFFFF;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+  margin-left: 8%;
+}
+.login-form{
+  background-color: blue;
+}
+input[type="button"] {
+
+  width: 120px;
+
+  height: 60px;
+  margin-left: 35px;
+  display: block;
+  background-color: gray;
+  color: white;
+  border: none;
+
+}
+.loginwithfb{
+  clear: both;
+  margin: 4%;
+  padding: 2%;
+}
+.btn-fb{
+  width: 100%;
+}
+.splitertxt{
+  text-align: center;
+}
+.spliter{
+  height:1px;
+  background:#717171;
+  border-bottom:1px solid #313030;
+}
