@@ -8,8 +8,10 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { CatalogComponent } from './components/catalog/catalog.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagenotFoundComponent } from './components/pagenot-found/pagenot-found.component';
-
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { FooterComponent } from './components/commons/footer/footer.component';
+import { PartnerComponent } from './components/partner/partner.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,14 @@ import { PagenotFoundComponent } from './components/pagenot-found/pagenot-found.
     MainComponent,
     NavigationComponent,
     CatalogComponent,
-    PagenotFoundComponent
+    PagenotFoundComponent,
+    FooterComponent,
+    PartnerComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
+    MatDialogModule,
     NgbModule,
     AppRoutingModule
   ],

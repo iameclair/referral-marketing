@@ -6,12 +6,12 @@
 }
 .navbar-brand{
   color: #201010;
-  font-family: 'Crimson Text', serif;
-  font-size: 32px;
+  font-family: 'Lobster', cursive;
+  font-size: 48px;
 }
 .navbar{
   border-bottom: 1px solid #201010;
-  margin-bottom: 5%;
+  margin-bottom: 0;
 }
 .login-btn{
   background-color: #201010;
