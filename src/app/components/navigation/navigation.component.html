@@ -8,12 +8,12 @@
     <ul class="navbar-nav mr-auto">
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn login-btn" type="button" (click)="open(loginmodal)" routerLink="/account">
+      <button class="btn login-btn" type="button" (click)="open(loginmodal)">
         Log in
       </button>
     </form>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn signin-btn" type="submit" (click)="open(registermodal)">
+      <button class="btn signin-btn" type="button" (click)="openReg(registermodal)">
         Sign Up
       </button>
     </form>
@@ -42,7 +42,7 @@
               <label for="exampleInputPassword1">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <button type="submit" class="btn login-btn float-right">Login</button>
+            <button type="submit" class="btn login-btn float-right" routerLink="/account">Login</button>
             <div class="loginwithfb">
               <p class="splitertxt"><span class="spliter"></span>or<span class="spliter"></span></p>
               <button type="submit" class="btn btn-primary btn-lg btn-block">Login With Facebook</button>
@@ -64,7 +64,6 @@
     </button>
   </div>
   <div class="modal-body">
-
     <div class="card" style="width: 100%;">
       <div class="card-body">
         <h5 class="card-title">Sign In</h5>
