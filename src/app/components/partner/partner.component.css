@@ -1,0 +1,20 @@
+.sidescrollable{
+  width: 100%;
+  height: 35em;
+  overflow: auto;
+  white-space: nowrap;
+  color: #201010;
+}
+div.partner{
+  display: inline-block;
+  width: 20%;
+  height: 30em;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #CCCCCC;
+  border-radius: 5%;
+  white-space: pre-wrap;      /* CSS3 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  word-wrap: break-word;
+}

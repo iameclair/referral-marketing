@@ -1,3 +1,9 @@
-<p>
-  partner works!
-</p>
+<a href="#">
+<div class="sidescrollable">
+  <div class="partner" *ngFor="let partner of _partners">
+    <h1>{{partner.name}}</h1>
+    <img src="{{partner.logoUrl}}" height="100px" width="100px">
+    <p>{{partner.description}}</p>
+  </div>
+</div>
+</a>
